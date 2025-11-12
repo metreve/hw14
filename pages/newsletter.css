@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+body {
+  background-color: #36384d;
+  align-content: center;
+  height: 100vh;
+  justify-items: center;
+}
+
+.PCContainer {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
+  height: 42%;
+  width: 20%;
+  border-radius: 36px;
+  align-content: center;
+}
+
+.titleText {
+  font-family: Roboto-Bold;
+  font-size: 40px;
+  color: #242742;
+}
+
+.smallText {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #242742;
+}
+
+.check {
+  max-width: fit-content;
+  max-height: fit-content;
+  height: 54px;
+}
+
+.main {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 80%;
+  height: 85%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  width: 100%;
+  font-family: Roboto;
+  color: white;
+  height: 15%;
+  background-color: #242742;
+  border: 0;
+  border-radius: 8px;
+}
+
+.buttonMobile {
+  width: 100%;
+  font-family: Roboto;
+  color: white;
+  height: 15%;
+  background-color: #242742;
+  border: 0;
+  border-radius: 8px;
+  display: none;
+}
+
+.mobContainer {
+  display: flex;
+  width: 85%;
+  height: 70%;
+  flex-direction: column;
+  gap: 25px;
+}
+
+span {
+  font-family: Roboto-Bold;
+  font-size: 15px;
+  color: #242742;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 15px 32px rgba(#ff615580, 0.5);
+  background-color: #ff6a3a;
+}
+
+.buttonMobile:hover {
+  cursor: pointer;
+  box-shadow: 0px 15px 32px rgba(#ff615580, 0.5);
+  background-color: #ff6a3a;
+}
+
+.mobContainer {
+  display: none;
+}
+@media (max-width: 1240px) {
+  button {
+    height: 15%;
+  }
+
+  .main {
+    height: 90%;
+    gap: 25px;
+  }
+
+  .PCContainer {
+    width: 25%;
+  }
+
+  .titleText {
+    font-size: 30px;
+  }
+
+  .smallText {
+    font-size: 12px;
+  }
+  .mobContainer {
+    display: none;
+  }
+  .buttonMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1240px) {
+  button {
+    height: 15%;
+  }
+
+  .main {
+    height: 90%;
+    gap: 25px;
+  }
+
+  .PCContainer {
+    width: 35%;
+  }
+
+  .titleText {
+    font-size: 30px;
+  }
+
+  .smallText {
+    font-size: 12px;
+  }
+  .buttonMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 625px) {
+  button {
+    height: 15%;
+  }
+
+  .main {
+    height: 90%;
+    gap: 25px;
+  }
+
+  .PCContainer {
+    width: 45%;
+  }
+
+  .titleText {
+    font-size: 30px;
+  }
+
+  .smallText {
+    font-size: 12px;
+  }
+
+  .mobContainer {
+    display: none;
+  }
+
+  .buttonMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .PCContainer {
+    display: none;
+  }
+
+  .mobContainer {
+    display: flex;
+  }
+
+  .buttonMobile {
+    display: block;
+  }
+
+  body {
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .buttonMobile {
+    width: 80%;
+    height: 10%;
+    justify-self: center;
+    align-items: center;
+  }
+}
