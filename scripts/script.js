@@ -1,14 +1,18 @@
 let number1 = 10;
 console.log(
-  "რიცხვი:" + number1 + ", აყვანილი იქნა კვადრატში (" + (number1 ^ 2) + ")"
+  "რიცხვი: " +
+    number1 +
+    ", აყვანილი იქნა კვადრატში (" +
+    Math.pow(number1, 2) +
+    ")"
 );
 
-if ((number1 ^ 2) > 100) {
-  console.log((number1 ^ 2) + " არის 100-ზე მეტი");
-} else if ((number1 ^ 2) < 100) {
-  console.log((number1 ^ 2) + " არის 100-ზე ნაკლები");
+if (Math.pow(number1, 2) > 100) {
+  console.log(Math.pow(number1, 2) + " არის 100-ზე მეტი");
+} else if (Math.pow(number1, 2) < 100) {
+  console.log(Math.pow(number1, 2) + " არის 100-ზე ნაკლები");
 } else {
-  console.log((number1 ^ 2) + " უდრის 100-ს");
+  console.log(Math.pow(number1, 2) + " უდრის 100-ს");
 }
 
 let number2 = 55;
