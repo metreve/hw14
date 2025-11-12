@@ -107,11 +107,12 @@ label {
 }
 
 .mobileMainContainer {
-  display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .mobileImage {
+  display: none;
   width: 100%;
   max-height: fit-content;
 }
@@ -252,6 +253,10 @@ label {
   .mobileMainContainer {
     display: flex;
     gap: 50px;
+  }
+
+  .mobileImage {
+    display: block;
   }
 
   .regularText {
